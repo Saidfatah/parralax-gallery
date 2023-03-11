@@ -1,0 +1,59 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  user-select: none;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+}
+.imageCard {
+  position: relative;
+  border-radius: 25px;
+  height: 300px;
+  background-color: var(--base);
+}
+
+.imageCard h3 {
+  color: transparent;
+  font-size: 40px;
+  line-height: 1.1;
+  font-weight: 600;
+  letter-spacing: 0em;
+  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+  font-size: 60px;
+  line-break: break;
+  position: absolute;
+  top: 0%;
+  left: 5%;
+  z-index: 9;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(180deg, #ffb6ff, #b344ff);
+  overflow: hidden;
+}
+.image {
+  width: 40vmin;
+  user-select: none;
+  height: 100%;
+  object-fit: cover;
+  object-position: 100% 50%;
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+.image-track {
+  display: flex;
+  gap: 4vmin;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(0%, -50%);
+}
